@@ -210,7 +210,7 @@ const Cat = () => {
         </View>
         <View style={styles.calculationBox}>
           <View style={[styles.calculationBoxUnitCol, styles.flex1]}>
-            <TouchableOpacity onPress={() => { updateNumber(number.slice(0, -1)) }} style={styles.calculationBoxButtonCol}>
+            <TouchableOpacity onPress={() => { setNumber(number.slice(0, -1)) }} style={styles.calculationBoxButtonCol}>
               <Text style={styles.calculationBoxButtonText}>Del</Text>
             </TouchableOpacity>
           </View>
